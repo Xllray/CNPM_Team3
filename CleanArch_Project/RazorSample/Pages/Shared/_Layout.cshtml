@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Team3's Shop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="stylesheet" type="text/css" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <!---->
+    <link rel="stylesheet" type="text/css" href="~/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/slick-theme.css" />
+    <!--slide-->
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!---->
+        <!--HEADER-->
+        <div id="header">
+            <div id="header-top">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-md-6" id="header-text">
+                        </div>
+                        <div class="col-md-6">
+                            <nav id="header-nav-top">
+                                <ul class="list-inline pull-right" id="headermenu">
+                                    @RenderSection("headers")
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" id="header-main">
+                    <div class="col-md-5">
+                        @RenderSection("search")
+                    </div>
+                    <div class="col-md-4">
+                        <a asp-area="" asp-page="/Index">
+                            @RenderSection("icon")
+                        </a>
+                    </div>
+                    <div class="col-md-3" id="header-right">
+                        <div class="pull-right">
+                            <div class="pull-left">
+                                <i class="glyphicon glyphicon-phone-alt"></i>
+                            </div>
+                            <div class="pull-right">
+                                <p id="hotline">HOTLINE</p>
+                                <p>0986420994</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END HEADER-->
+        <!--MENUNAV-->
+        <div id="menunav">
+            <div class="container">
+                <nav>
+                    <div class="home pull-left">
+                        <a asp-area="" asp-page="/Index">Trang chủ</a>
+                    </div>
+                    <!--menu main-->
+                    <ul id="menu-main">
+                        <li>
+                            <a asp-area="" asp-page="/Products/Index">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a asp-page="/Contact">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-page="/About">Về chúng tôi</a>
+                        </li>
+                    </ul>
+                    <!-- end menu main-->
+                    <!--Shopping-->
+                    <ul class="pull-right" id="main-shopping">
+                        <li>
+                            <a asp-page="/Basket/View"><i class="fa fa-shopping-basket"></i> Giỏ hàng (@RenderSection("slcart")) </a>
+                            
+                        </li>
+                    </ul>
+                    <!--end Shopping-->
+                </nav>
+            </div>
+        </div>
+        <!--ENDMENUNAV-->
+
+        <div id="maincontent">
+            <div class="container">
+                <div class="col-md-12">
+                    @RenderBody()
+                </div>
+            </div>
+
+            <div style="height:50px"></div>
+
+            <div class="container-pluid">
+                <section id="footer-button">
+                    <div class="container-pluid">
+                        <div class="container">
+                            <div class="col-md-6" id="ft-about">
+                                <h3 class="tittle-footer">Hệ thống cửa hàng</h3>
+                                <p>
+                                    273 An Dương Vương, Phường 3, Quận 5, Hồ Chí Minh</br>
+                                    105 Bà Huyện Thanh Quan</br>
+                                    28 Nguyễn Thông
+                                </p>
+                            </div>
+                            <div class="col-md-3 box-footer">
+                                <h3 class="tittle-footer">Team 3's shop</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <a asp-area="" asp-page="/Index"><i></i> Trang chủ </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <a asp-area="" asp-page="/Products/Index"><i></i> Sản phẩm </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <a asp-page="/Contact"><i></i>  Liên hệ </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <a asp-area="" asp-page="/About"><i></i> Về chúng tôi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3" id="footer-support">
+                                <h3 class="tittle-footer"> Liên hệ</h3>
+                                <ul>
+                                    <li>
+
+                                        <p><i class="fa fa-home" style="font-size: 16px;padding-right: 5px;"></i>  273 An Dương Vương, Phường 3, Quận 5, Hồ Chí Minh </p>
+                                        <p><i class="sp-ic fa fa-mobile" style="font-size: 22px;padding-right: 5px;"></i> 0123456789</p>
+                                        <p><i class="sp-ic fa fa-envelope" style="font-size: 13px;padding-right: 5px;"></i> support@gmail.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="ft-bottom">
+                    <p class="text-center"> &copy; 2019 - Project_OnlineShop - <a asp-area="" asp-page="/Privacy">Privacy</a> </p>
+                </section>
+            </div>
+
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+
+            @RenderSection("Scripts", required: false)
+</body>
+</html>

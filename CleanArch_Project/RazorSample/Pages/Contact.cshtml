@@ -1,0 +1,82 @@
+@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+
+@section icon{
+    <img src="images/logo1.png">
+}
+@section slcart{
+
+    @if (Model.cart == null)
+    {
+        <i>0 </i>
+    }
+    else
+    {
+        var soluong = 0;
+        @foreach (var item in Model.cart)
+        {
+            soluong++;
+
+        }
+        <i>@soluong </i>
+
+    }
+}
+@section headers{
+
+
+    @if (@HttpContext.Session.GetString("username") != null)
+    {
+
+        <li>
+            Hello <a asp-page="/users/details" asp-route-id="@HttpContext.Session.GetString("userid")">@HttpContext.Session.GetString("username")</a>
+        </li>
+        <li>
+            <form method="post">
+                <input asp-page="/Account/Logout/DangXuat" type="submit" value="Log out" />
+            </form>
+        </li>
+
+    }
+    else    //chua dang nhap
+    {
+
+        <li>
+            <a asp-page="/Account/Login/DangNhap"><i class="fa fa-unlock"></i> Đăng nhập</a>
+        </li>
+        <li>
+            <a asp-page="/Account/Register/DangKy"><i class="fa fa-share-square-o"></i> Đăng ký</a>
+        </li>
+    }
+
+}
+
+@section search{
+    <form method="get" class="form-inline">
+        <div class="form-group">
+            <input type="text" asp-for="CurrentFilterProduct" placeholder="Keyword" class="form-control">
+            <button asp-page="/Products/index" value="Search" type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        </div>
+    </form>
+}
+<li class="lzd-contact-us-with-livechat-button _content-item">
+    <p>
+        <span style="color: rgb(64,64,64);background-color: rgb(255,255,255);font-size: 16px;">
+            Bạn đang cần hỗ trợ, cần giải pháp cho vấn đề của mình, hay cần đóng góp ý kiến cho Bộ Phận Chăm Sóc Khách Hàng?
+            Hãy liên hệ với Team3s qua Tổng đài hotline chăm sóc khách hàng hoặc dịch vụ Chat Trực Tuyến miễn phí.
+            Chúng tôi sẽ cung cấp giải pháp để xử lí vấn đề của bạn nhanh nhất có thể!
+        </span>
+        <br><br><span style="color: rgb(32,32,32);background-color: rgb(255,255,255);font-size: 15px;">
+            Hotline CSKH 19001007 (từ 9:00 đến 18:00, 1000đ/phút)
+        </span>
+    </p>
+    <p>
+        <span style="color: rgb(32,32,32);background-color: rgb(255,255,255);font-size: 15px;">
+            Chat Trực Tuyến (từ 7:00 – 22:00)
+        </span>
+    </p>
+</li>

@@ -1,0 +1,225 @@
+﻿@page
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Product";
+}
+<!--render sections-->
+
+@section icon{
+    <img src="/../images/logo1.png">
+}
+
+@section headers{
+
+
+    @if (@HttpContext.Session.GetString("username") != null)
+    {
+
+        <li>
+            Hello <a asp-page="/Account/info/details" asp-route-id="@HttpContext.Session.GetString("userid")">@HttpContext.Session.GetString("username")</a>
+        </li>
+        <li>
+            <form method="post">
+                <input asp-page="/Account/Logout/DangXuat" type="submit" value="Log out" />
+            </form>
+        </li>
+
+    }
+    else    //chua dang nhap
+    {
+
+        <li>
+            <a asp-page="/Account/Login/DangNhap"><i class="fa fa-unlock"></i> Đăng nhập</a>
+        </li>
+        <li>
+            <a asp-page="/Account/Register/DangKy"><i class="fa fa-share-square-o"></i> Đăng ký</a>
+        </li>
+    }
+
+}
+
+@section search{
+    <form method="get" class="form-inline">
+        <div class="form-group">
+            <input type="text" asp-for="CurrentFilterProduct" placeholder="Keyword" class="form-control">
+            <button asp-page="/Products/index" value="Search" type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        </div>
+    </form>
+}
+@section slcart{
+
+    @if (Model.cart == null)
+    {
+        <i>0 </i>
+    }
+    else
+    {
+        var soluong = 0;
+        @foreach (var item in Model.cart)
+        {
+            soluong++;
+
+        }
+        <i>@soluong </i>
+
+    }
+}
+<style>
+
+
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        margin-top: 15px;
+        font-family: arial;
+        float: left;
+        margin-left: 15px;
+    }
+
+    .img_frame {
+        width: 200px;
+        height: 250px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .blank_img {
+        width: 200px;
+        height: 250px;
+        background-color: black;
+        float: left;
+    }
+
+    .price {
+        color: grey;
+        font-size: 22px;
+    }
+
+    .img_frame img {
+        transition: .3s ease-in;
+    }
+
+    .img_frame:hover img {
+        transform: scale(1.3);
+    }
+
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+
+    .container1 {
+        clear: both;
+    }
+</style>
+
+<div class="col-md-3  fixside">
+    <div class="box-left box-menu">
+        <h3 class="box-title"><i class="fa fa-list"></i>  Danh mục</h3>
+        <ul>
+            @foreach (var item in Model.ProductIndexVM.typename)
+            {
+
+                <li>
+                    <a href="http://localhost:25197/Products?typename=@item">@item<span class="badge pull-right"></span></a>
+                </li>
+
+
+            }
+
+        </ul>
+    </div>
+</div>
+<div class="col-md-9 bor">
+    <div>
+        <form method="get">
+            <p>
+                <select asp-for="typename" asp-items="Model.ProductIndexVM.Genres">
+                    <option value="">All</option>
+                </select>
+                Find by name: <input type="text" asp-for="CurrentFilterProduct" />
+                <input type="submit" />
+                <a asp-page="./index" asp-route-sort="giam"></a>
+            </p>
+        </form>
+
+        <form method="post">
+            <div class="text-center">
+                <section class="box-main1">
+                    <div class="showitem">
+                        @foreach (var Product in Model.ProductIndexVM.Products)
+                        {
+                            <div class="col-md-3  item-product bor">
+                                <a asp-page="./Details" asp-route-id="@Product.ProductId">
+                                    <img src="/images/@Product.ProductImage" class="" width="100%" height="180">
+                                </a>
+                                <div class="info-item">
+                                    <a class="cutboss" asp-page="./Details" asp-route-id="@Product.ProductId">
+                                        <div class="cutboss">@Product.ProductName</div>
+
+                                    </a>
+                                    <p><b class="price">@Product.ProductPrice đ</b></p>
+                                </div>
+                                <a asp-page="/Basket/View" asp-page-handler="buynow"
+                                   asp-route-id=@Product.ProductId><i class="fa fa-shopping-basket fa-3x"></i></a>
+
+                            </div>
+                        }
+                    </div>
+                </section>
+            </div>
+            <!--
+            SIMPLE CARD PRODUCT
+
+                        <td>
+                            <button type="submit" asp-page-handler="Delete" asp-route-id="Product.ProductId">Delete</button>
+                            <a asp-page="/Movies/Edit" asp-route-id="Product.ProductId">Edit</a>
+                        </td>
+            -->
+
+
+
+        </form>
+    </div>
+
+
+    <div>
+        @{
+            var preDisabled = !Model.ProductIndexVM.Products.HasPrevious ? "disabled" : "";
+            var nextDisabled = !Model.ProductIndexVM.Products.HasNext ? "disabled" : "";
+        }
+        <div class="container1">
+
+            <a asp-page="Index"
+               asp-route-currentFilterproduct="@Model.CurrentFilterProduct"
+               asp-route-typename="@Model.typename"
+               asp-route-sort="@Model.sort"
+               asp-route-pageIndex="@(Model.ProductIndexVM.Products.PageIndex - 1)"
+               class="btn btn-default @preDisabled">Previous</a>
+
+            <a asp-page="Index"
+               asp-route-currentFilterproduct="@Model.CurrentFilterProduct"
+               asp-route-typename="@Model.typename"
+               asp-route-sort="@Model.sort"
+               asp-route-pageIndex="@(Model.ProductIndexVM.Products.PageIndex + 1)"
+               class="btn btn-default @nextDisabled">Next</a>
+        </div>
+    </div>
+</div>
+

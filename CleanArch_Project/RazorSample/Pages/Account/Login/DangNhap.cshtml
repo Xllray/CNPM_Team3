@@ -1,0 +1,45 @@
+﻿@page
+@model Web.Pages.Login.DangNhapModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DangNhap</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+        <div class="row justify-content-center align-items-center" style="height:100vh">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post">
+                            <div class="form-group">
+                                Username
+                                <label asp-for="User.UserName" title="User.UserName" />
+                                <input type="text" asp-for="User.UserName" />
+                            </div>
+                            <div class="form-group">
+                                Password
+                                <label asp-for="User.UserPassword" title="User.UserPassword" />
+                                <input type="password" asp-for="User.UserPassword"/>
+                            </div>
+                            <p style="color:red">@Model.message</p>
+                            <input type="submit" value="Dang Nhap" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

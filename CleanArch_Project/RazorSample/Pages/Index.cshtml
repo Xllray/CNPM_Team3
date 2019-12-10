@@ -1,0 +1,111 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+@section icon{
+    <img src="images/logo1.png">
+}
+@section slcart{
+
+    @if (Model.cart == null)
+    {
+        <i>0 </i>
+    }
+    else
+    {
+        var soluong = 0;
+        @foreach (var item in Model.cart)
+        {
+            soluong++;
+
+        }
+        <i>@soluong </i>
+
+    }
+}
+
+@section headers{
+
+
+    @if (@HttpContext.Session.GetString("username") != null)
+    {
+
+        <li>
+            Hello <a asp-page="/Account/Info/Details" asp-route-id="@HttpContext.Session.GetString("userid")">@HttpContext.Session.GetString("username")</a>
+        </li>
+        <li>
+            <form method="post">
+                <input asp-page="/Account/Logout/DangXuat" type="submit" value="Log out" />
+            </form>
+        </li>
+
+    }
+    else    //chua dang nhap
+    {
+
+        <li>
+            <a asp-page="/Account/Login/DangNhap"><i class="fa fa-unlock"></i> Đăng nhập</a>
+        </li>
+        <li>
+            <a asp-page="/Account/Register/DangKy"><i class="fa fa-share-square-o"></i> Đăng ký</a>
+        </li>
+    }
+
+}
+
+@section search{
+    <form method="get" class="form-inline">
+        <div class="form-group">
+            <input type="text" asp-for="CurrentFilterProduct" placeholder="Keyword" class="form-control">
+            <button asp-page="/Products/index" value="Search" type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        </div>
+    </form>
+}
+
+<div class="col-md-3  fixside">
+    <div class="box-left box-menu">
+        <h3 class="box-title"><i class="fa fa-list"></i>  Danh mục</h3>
+        <ul>
+            @foreach (var item in Model.productListVm.typename)
+            {
+
+                <li>
+                    <a href="http://localhost:25197/Products?typename=@item">@item<span class="badge pull-right"></span></a>
+                </li>
+
+
+            }
+
+        </ul>
+    </div>
+</div>
+<div class="col-md-9 bor">
+    <div class="text-center">
+        <section id="slide" class="text-center">
+            <img src="images/slide/sl3.jpg" class="img-thumbnail">
+        </section>
+
+        <section class="box-main1">
+
+            <div class="showitem">
+
+                @foreach (var item in Model.productListVm1.ListProductsNew)
+                {
+
+                    <div class="col-md-3 item-product bor">
+                        <a href="">
+                            <img src="images/@item.ProductImage" class="" width="100%" height="180">
+                        </a>
+                        <div class="info-item">
+                            <a href=""><div class="cutboss">@item.ProductName</div></a>
+                            <p><b class="price">@item.ProductPrice đ</b></p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+    </div>
+</div>
+

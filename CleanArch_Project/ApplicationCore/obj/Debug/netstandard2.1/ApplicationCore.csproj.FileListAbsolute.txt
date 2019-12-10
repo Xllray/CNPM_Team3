@@ -1,0 +1,40 @@
+C:\Users\Administrator\Downloads\CleanArch\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.deps.json
+C:\Users\Administrator\Downloads\CleanArch\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Downloads\CleanArch\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Downloads\CleanArch\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\CleanArch\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Administrator\Downloads\CleanArch\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Administrator\Downloads\CleanArch\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Downloads\CleanArch\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.deps.json
+C:\Users\Administrator\Desktop\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.deps.json
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.pdb
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.deps.json
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.dll
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.pdb
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.csprojAssemblyReference.cache
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfoInputs.cache
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfo.cs
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.dll
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.deps.json
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.pdb

@@ -1,0 +1,55 @@
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CopyComplete
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
+C:\Users\Administrator\Downloads\CleanArch\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CopyComplete
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
+C:\Users\Administrator\Desktop\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
+C:\Users\Administrator\Desktop\Share\CNPM\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.dll
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.pdb
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csprojAssemblyReference.cache
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CopyComplete
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
+D:\Cong nghe phan mem\Do an\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CopyComplete
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
+C:\Users\Administrator\Desktop\CNPM-master\CleanArch_Project\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb

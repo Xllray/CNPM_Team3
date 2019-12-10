@@ -1,0 +1,96 @@
+﻿@page
+@model Web.Pages.Register.DangKyModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DK</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <style>
+        body {
+            padding-top: 0px;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+
+        .login-screen-bg {
+            background-color: #EFEFEF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="text-center">ĐĂNG KÝ</h1>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-4 well well-sm col-md-offset-4">
+
+                <legend>
+                    <a href=""><i class="glyphicon glyphicon-globe"></i></a> Đăng ký thành viên!
+                </legend>
+
+               
+
+             <form method="post">
+
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Customer.Name" class="control-label"></label>
+            <input asp-for="Customer.Name" class="form-control" />
+            <span asp-validation-for="Customer.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Customer.Phone" class="control-label"></label>
+            <input asp-for="Customer.Phone" class="form-control" />
+            <span asp-validation-for="Customer.Phone" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Customer.Email" class="control-label"></label>
+            <input asp-for="Customer.Email" class="form-control" />
+            <span asp-validation-for="Customer.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Customer.Address" class="control-label"></label>
+            <input asp-for="Customer.Address" class="form-control" />
+            <span asp-validation-for="Customer.Address" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="User.UserName" class="control-label"></label>
+            <input asp-for="User.UserName" class="form-control" />
+            <span asp-validation-for="User.UserName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="User.UserPassword" class="control-label"></label>
+            <input type="password"  asp-for="User.UserPassword" class="form-control" />
+            <span asp-validation-for="User.UserPassword" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Thong bao message-->
+    <p style="color:red" >@Model.message</p>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>
+</html>
