@@ -1,0 +1,99 @@
+﻿@page
+@model Web.Pages.Admin.Admin_indexModel
+@{
+    ViewData["Title"] = "Admin_index";
+    Layout = "~/Pages/Shared/_LayoutAdmin_pages.cshtml";
+
+}
+@section right_header
+{
+    <div class="nav-right">
+        <img src="~/image/icon/user-icon.svg" />
+        <div class="ten-admin"><a>Welcome - @HttpContext.Session.GetString("username")!</a></div>
+        <form asp-page-handler="Signout" method="post">
+                   
+                <input type="submit" style="font-size: 15px;margin:17px 8px 0 8px" value="Sign Out"/>
+            
+        </form>       
+    </div>
+}
+@section Navigation
+{
+    <div class="breadcrumb">
+        <span><a asp-page="./Admin_index">Home</a></span>
+    </div>
+}
+
+@section upperBody
+{
+    <div class="chart chart-bgred">
+        <div class="chart__num">0</div>
+        <div class="chart__label">Người Truy Cập</div>
+        <div class="chart__img chart__img-img1"></div>
+    </div>
+    <div class="chart chart-bgblue">
+        <div class="chart__num">0</div>
+        <div class="chart__label">Sản Phẩm Đã Bán</div>
+        <div class="chart__img chart__img-img2"></div>
+    </div>
+    
+        <div class="chart chart-bgbluewhite">
+            <div class="chart__num">0</div>
+            <div class="chart__label">Khách Hàng</div>
+            <div class="chart__img chart__img-img3"></div>
+        </div>
+     
+    <div class="chart chart-bgyellow">
+        <div class="chart__num">0</div>
+        <div class="chart__label">Doanh Thu</div>
+        <div class="chart__img chart__img-img4"></div>
+    </div>
+}
+
+<h1> BODY </h1>
+
+@section underBody
+{
+    
+        <a href="qlsp.html">
+            
+            <div class="thong-ke">
+                <form method="get">
+                    <div class="thong-ke__num">@ViewData["TotalProduct"]</div>
+                    <div class="thong-ke__title">Tổng Sản Phẩm</div>
+                    <div class="thong-ke__img img1"></div>
+                </form>
+            </div>                     
+        </a>
+    
+    
+    <a href="qluser.html">
+        <div class="thong-ke">
+            <form method="get">
+                <div class="thong-ke__num">@ViewData["TotalUser"]</div>
+                <div class="thong-ke__title">Khách Hàng</div>
+                <div class="thong-ke__img img2"></div>
+            </form>            
+        </div>
+    </a>
+    <a href="qldh.html">
+        <div class="thong-ke">
+            <form>
+                <div class="thong-ke__num"></div>
+                <div class="thong-ke__title">Đơn Hàng</div>
+                <div class="thong-ke__img img3"></div>
+            </form>           
+        </div>
+    </a>
+    <a href="qldm.html">
+        <div class="thong-ke">
+            <form method="get">
+                <div class="thong-ke__num">@ViewData["TotalProvider"]</div>
+                <div class="thong-ke__title">Nhà cung cấp</div>
+                <div class="thong-ke__img img4"></div>
+            </form>            
+        </div>
+    </a>
+}
+
+
