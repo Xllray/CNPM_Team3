@@ -954,11 +954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj",
       "projectName": "ApplicationCore",
-      "projectPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj",
+      "projectPath": "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\Mr_Minh Nhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\ApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

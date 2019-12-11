@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ApplicationCore.DTOs
 {
@@ -7,7 +8,10 @@ namespace ApplicationCore.DTOs
     {
         public int UserId { get; set; }
         public int? UserPermissionId { get; set; }
+        [Required]
+        [DataType(DataType.Text)]
         public string UserName { get; set; }
+        [Required]        
         public string UserPassword { get; set; }
         public int UserCustomerId { get; set; }
 

@@ -46,3 +46,11 @@ C:\Users\Mr_Minh Nhat\Downloads\CNPM_Team3-master\CleanArch_Project\ApplicationC
 C:\Users\Mr_Minh Nhat\Downloads\CNPM_Team3-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfo.cs
 C:\Users\Mr_Minh Nhat\Downloads\CNPM_Team3-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.dll
 C:\Users\Mr_Minh Nhat\Downloads\CNPM_Team3-master\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Mr_Minh Nhat\Documents\GitHub\CNPM_Team3\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.deps.json
+C:\Users\Mr_Minh Nhat\Documents\GitHub\CNPM_Team3\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Mr_Minh Nhat\Documents\GitHub\CNPM_Team3\CleanArch_Project\ApplicationCore\bin\Debug\netstandard2.1\ApplicationCore.pdb
+C:\Users\Mr_Minh Nhat\Documents\GitHub\CNPM_Team3\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.csprojAssemblyReference.cache
+C:\Users\Mr_Minh Nhat\Documents\GitHub\CNPM_Team3\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Mr_Minh Nhat\Documents\GitHub\CNPM_Team3\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Mr_Minh Nhat\Documents\GitHub\CNPM_Team3\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.dll
+C:\Users\Mr_Minh Nhat\Documents\GitHub\CNPM_Team3\CleanArch_Project\ApplicationCore\obj\Debug\netstandard2.1\ApplicationCore.pdb

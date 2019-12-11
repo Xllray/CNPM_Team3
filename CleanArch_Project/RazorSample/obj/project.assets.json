@@ -8540,11 +8540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\RazorSample\\Web.csproj",
+      "projectUniqueName": "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\RazorSample\\Web.csproj",
       "projectName": "Web",
-      "projectPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\RazorSample\\Web.csproj",
+      "projectPath": "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\RazorSample\\Web.csproj",
       "packagesPath": "C:\\Users\\Mr_Minh Nhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\RazorSample\\obj\\",
+      "outputPath": "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\RazorSample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8563,11 +8563,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Mr_Minh Nhat\\Documents\\GitHub\\CNPM_Team3\\CleanArch_Project\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

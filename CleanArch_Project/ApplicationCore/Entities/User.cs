@@ -9,8 +9,7 @@ namespace ApplicationCore.Entities
     {
         public int UserId { get; set; }
         public int? UserPermissionId { get; set; }
-        public string UserName { get; set; }
-        [DataType(DataType.Password)]
+        public string UserName { get; set; }      
         public string UserPassword { get; set; }
         public int UserCustomerId { get; set; }
 
