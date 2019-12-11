@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="stylesheet" href="~/fonts/all.css">
+    <link rel="stylesheet" href="~/css/qlsp.css">
+    <link rel="stylesheet" href="~/css/qlsp.css">
+    <link rel="stylesheet" href="~/fonts/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <span class="title-header">ADMIN AREA</span>
+            @RenderSection("right_header",required:false)
+        </div>
+        <div class="left-menu">
+            <a class="left-menu__item active" asp-page="/Admin/Admin_index"><span id="speed-icon"></span>Thống kê</a>
+            <a class="left-menu__item" asp-area="" asp-page="/Admin/Admin_pages/Ad_products/Index"><span class="icon" id="product-icon"></span>Quản lý sản phẩm</a>
+            <a class="left-menu__item" asp-area="" asp-page="/Admin/Admin_pages/Ad_users/Index"><span class="icon" id="user-icon"></span>Quản lý User</a>
+            <a class="left-menu__item" href="qldh.html"><span class="icon" id="don-hang-icon"></span>Quản lý đơn hàng</a>
+            <a class="left-menu__item" href="qldm.html"><span class="icon" id="danh-muc-icon"></span>Quản lý danh mục</a>
+            <div class="copyright">&copy Project-OnlineShop 2019</div>
+        </div>
+        <div class="main">
+
+            @RenderSection("Navigation", required: false)
+            @RenderSection("upperBody", required: false)
+            <div class="section">
+
+                @RenderBody()
+
+            </div>
+            @RenderSection("underBody", required: false)
+        </div>
+        <div class="footer">
+            <div>
+                Powered by
+                <a href="../index.html"> PROJECT-ONLINESHOP</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -15,9 +15,7 @@ namespace ApplicationCore.Services
     public class UserService : IUserService
     {
         private readonly IUnitOfWork   _unitOfWork;
-        
-       
-        
+
         public UserService(IUnitOfWork unitOfWork)
 
         {
@@ -26,11 +24,9 @@ namespace ApplicationCore.Services
            
              
         }
-
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //dang ky
-        
-       
-        
+
         public UserDto GetUser(int id)
         {
             var User = _unitOfWork.Users.GetBy(id);
@@ -167,5 +163,28 @@ namespace ApplicationCore.Services
                 _unitOfWork.Complete();
             }
         }
+        //Get danh sach UserDto
+        public IEnumerable<UserDto> GetUser(string searchString)
+        {
+            Expression<Func<User, bool>> predicate = m => true;
+
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+
+                predicate = m => m.UserName.Contains(searchString);
+            }
+            var Users = _unitOfWork.Users.Find(predicate);
+
+            return Users.ConvertToUserDtos();
+
+        }
+
+
+
+
+
+
+
     }
 }

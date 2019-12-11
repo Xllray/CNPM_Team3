@@ -10,6 +10,7 @@ namespace ApplicationCore.DTOs
         public ProductDto()
         {
             OrderDetail = new HashSet<OrderDetailDto>();
+            ProductProvider = new HashSet<ProviderDto>();
         }
 
         public int ProductId { get; set; }
@@ -26,7 +27,7 @@ namespace ApplicationCore.DTOs
 
         public int? ProductProviderId { get; set; }
 
-        public virtual ProviderDto ProductProvider { get; set; }
+        public virtual ICollection<ProviderDto> ProductProvider { get; set; }
         
         public virtual ICollection<OrderDetailDto> OrderDetail { get; set; }
     }

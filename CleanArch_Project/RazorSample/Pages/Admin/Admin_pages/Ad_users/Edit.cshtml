@@ -1,0 +1,51 @@
+﻿@page
+@model Web.Pages.Admin.Admin_pages.Ad_users.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_LayoutAdmin_pages.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="User.UserId" />
+            <div class="form-group">
+                <label asp-for="User.UserPermissionId" class="control-label"></label>
+                <select asp-for="User.UserPermissionId" class="form-control" asp-items="ViewBag.UserPermissionId"></select>
+                <span asp-validation-for="User.UserPermissionId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserName" class="control-label"></label>
+                <input asp-for="User.UserName" class="form-control" />
+                <span asp-validation-for="User.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserPassword" class="control-label"></label>
+                <input asp-for="User.UserPassword" class="form-control" />
+                <span asp-validation-for="User.UserPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserCustomerId" class="control-label"></label>
+                <select asp-for="User.UserCustomerId" class="form-control" asp-items="ViewBag.UserCustomerId"></select>
+                <span asp-validation-for="User.UserCustomerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

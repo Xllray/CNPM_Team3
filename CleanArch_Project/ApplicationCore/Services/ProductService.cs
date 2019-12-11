@@ -18,7 +18,7 @@ namespace ApplicationCore.Services
         {
             _unitOfWork = unitOfWork;
         }
-
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public ProductDto GetProduct(int id)
         {
             var Product = _unitOfWork.Products.GetBy(id);
@@ -30,7 +30,11 @@ namespace ApplicationCore.Services
             var Products = _unitOfWork.Products.GetAll().ToList();
             return Products.ConvertToProductDtos();
         }
-
+        public IEnumerable<UserDto> GetUsers()
+        {
+            var user = _unitOfWork.Users.GetAll().ToList();
+            return user.ConvertToUserDtos();
+        }
         public IEnumerable<ProductDto> GetListProducts()
         {
             var Products = _unitOfWork.Products.GetAll().ToList<Product>();
@@ -126,6 +130,26 @@ namespace ApplicationCore.Services
                 _unitOfWork.Products.Remove(Product);
                 _unitOfWork.Complete();
             }
+        }
+
+        public bool tontaiProductname(Product product)
+        {
+            var products = _unitOfWork.Products.GetAll().ToList<Product>(); //lay danh sach product
+            foreach (var item in products)
+            {
+
+                if (product.ProductName == item.ProductName)
+                {
+                    return false;
+                }
+
+            }
+            return true;
+        }
+        public void themsp(Product product)
+        {
+            _unitOfWork.Products.Add(product);
+            _unitOfWork.Complete();
         }
     }
 }

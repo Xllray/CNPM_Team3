@@ -1,0 +1,114 @@
+﻿@page
+@model Web.Pages.Admin.Admin_pages.Ad_users.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_LayoutAdmin_pages.cshtml";
+}
+
+@section right_header
+{
+    <div class="nav-right">
+        <img src="~/image/icon/user-icon.svg" />
+        <div class="ten-admin"><a>Hello - @HttpContext.Session.GetString("username")!</a></div>
+        <form asp-page-handler="Signout" method="post">
+
+            <input type="submit" style="font-size: 15px;margin:17px 8px 0 8px" value="Sign Out" />
+
+        </form>
+    </div>
+
+}
+@section Navigation
+{
+    <div class="breadcrumb">
+        <span><a asp-page="./Admin_index">Home</a></span>
+        <span> / </span>
+        <span>Users</span>
+    </div>
+}
+<div class="section">
+    <div class="them_sp" style="float:left"><a asp-page="Create">Thêm Sản Phẩm</a></div>
+
+    <form method="get">
+        <p>
+            <!--> search </!-->
+            Find by name: <input type="text" asp-for="CurrentFilterProduct" />
+            <input type="submit" />
+            <!-- Sort by price decrease -->
+            <a asp-page="./index" asp-route-sort="giam">Price Decrease</a>
+        </p>
+    </form>
+
+    <table id="table-sp">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserIndexVM.Users[0].UserName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserIndexVM.Users[0].UserPassword)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserIndexVM.Users[0].UserCustomer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserIndexVM.Users[0].UserPermission)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.UserIndexVM.Users)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserPassword)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserCustomer.CustomerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserPermission.PermissionId)
+                    </td>
+                    <td>
+                        <button class="sua_sp"><a asp-page="./Edit" asp-route-id="@item.UserId">Edit</a></button>
+                        <button class="xoa_sp"><a asp-page="./Delete" asp-route-id="@item.UserId">Delete</a></button>
+</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div>
+        <a asp-page="./Index">Back to List</a>
+    </div>
+    <div style="float:right">
+        @for (int i = 1; i <= @Model.UserIndexVM.Users.TotalPages; i++)
+        {
+            <div style="width:30px;float:left;@(i == Model.UserIndexVM.Users.PageIndex ? "pointer-events:none" : "")">
+                <table style="border-style:solid">
+                    <!--<tbody> -->
+                    <thead>
+                        <tr>
+                            <th>
+                                <a style="position:center"
+                                   asp-page="./Index"
+                                   asp-route-currentFilterproduct="@Model.CurrentFilterProduct"                                   
+                                   asp-route-pageIndex="@i"
+                                   class="page-item @(i == Model.UserIndexVM.Users.PageIndex ? "active" : "")">
+                                    @i
+                                </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <!--</tbody> -->
+                </table>
+            </div>
+        }
+    </div>
+
+</div>

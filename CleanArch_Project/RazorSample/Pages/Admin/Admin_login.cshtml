@@ -1,0 +1,49 @@
+﻿@page
+@model Web.Pages.Admin.Admin_loginModel
+@{
+    ViewData["Title"] = "Admin_login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Admin</title>
+    <link rel="stylesheet" href="~/css/admin_login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+        <a asp-page="./Pages/Index"><img src="~/images/logo.png" alt="?" width="170"></a>
+            <div class="content-left"></div>
+            <div class="content-right">
+                <form method="post">
+                    <h1>Admin Login</h1>
+                    <input id="email" type="text" placeholder="Email" asp-for="User.UserName"><br>
+                    <input id="pass" type="password" placeholder="Password" asp-for="User.UserPassword"><br>
+                    <button type="submit" value="Dang Nhap">LOGIN</button>
+                    <!--Show Message-->
+                    <p style="color:red">@Model.message</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Goi y -->
+    <div class="goiy" style="position: fixed;
+    text-align: center;
+    border-radius: 15px;
+    top: 10px;right: 10px;
+    width:220px;height: 47px;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);color: white">
+        <p>Email : MinhNhat</p>
+        <p>Pass : 123456</p>
+    </div>
+  
+</body>
+
+</html>
+

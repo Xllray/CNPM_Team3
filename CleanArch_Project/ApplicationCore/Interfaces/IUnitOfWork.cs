@@ -6,8 +6,7 @@ namespace ApplicationCore.Interfaces
     {
        
         IProductRepository Products { get; }
-      
-       
+     
 
         IUserRepository Users { get; }
 

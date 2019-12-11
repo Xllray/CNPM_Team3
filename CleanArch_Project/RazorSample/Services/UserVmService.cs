@@ -12,8 +12,8 @@ namespace Web.Services
 {
     public class UserVmService 
     {
-       
-        
+        private int pageSize = 5;
+
         private readonly UserService _service;
 
         public UserVmService(UserService UserService)
@@ -55,7 +55,15 @@ namespace Web.Services
             _service.DeleteUser(id);
         }
 
+        public UserVm GetUserIndexViewModel(string searchString,int pageIndex =1)
+        {
+            var users = _service.GetUser(searchString);
 
+            return new UserVm
+            {
+                Users = PaginatedList<UserDto>.Create(users, pageIndex, pageSize)
+            };
+        }
         
 
     } 

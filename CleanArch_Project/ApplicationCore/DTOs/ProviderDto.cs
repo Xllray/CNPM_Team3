@@ -16,5 +16,6 @@ namespace ApplicationCore.DTOs
         public string ProviderDescription { get; set; }
 
         public virtual ICollection<ProductDto> Product { get; set; }
+
     }
 }

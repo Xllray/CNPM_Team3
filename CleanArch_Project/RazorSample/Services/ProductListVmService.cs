@@ -12,7 +12,7 @@ namespace Web.Services
 {
     public class ProductListVmService 
     {
-        private int pageSize = 9;
+        private int pageSize = 5;
         
         private readonly ProductService _service;
 

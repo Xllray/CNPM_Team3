@@ -17,9 +17,14 @@ namespace Web.ViewModels
         public List<DateTime> DateTimes { get; set; }
 
 
-       // public List<Product> ProductsOrdered { get; set; }
+        // public List<Product> ProductsOrdered { get; set; }
 
         // public List<Item> ListItem { get; set; }
         //Get List hoa don
+        public PaginatedList<UserDto> Users { get; set; }
+
+
+
+
     }
 }

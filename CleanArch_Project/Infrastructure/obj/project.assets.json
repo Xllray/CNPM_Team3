@@ -1384,23 +1384,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\Mr_Minh Nhat\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CNPM-master\\CleanArch_Project\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\CNPM-master\\CleanArch_Project\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\CNPM-master\\CleanArch_Project\\Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Mr_Minh Nhat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mr_Minh Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1413,8 +1413,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\CNPM-master\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\CNPM-master\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\Mr_Minh Nhat\\Downloads\\CNPM_Team3-master\\CleanArch_Project\\ApplicationCore\\ApplicationCore.csproj"
             }
           }
         }

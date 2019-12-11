@@ -15,7 +15,7 @@ namespace Infrastructure.Persistence
             Customers = new CustomerRepository(context);
             Orders = new OrderRepository(context);
             OrderDetails = new OrderDetailRepository(context);
-
+            
             //khai bao user reponsitory
             //....
             //...
@@ -27,7 +27,6 @@ namespace Infrastructure.Persistence
 
         public IProductRepository Products { get; private set; }
         public IUserRepository Users { get; private set; }
-
         public ICustomerRepository Customers { get; set; }
         public IOrderRepository Orders { get; set; }
 

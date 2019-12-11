@@ -1,9 +1,10 @@
-﻿using System;
+﻿using ApplicationCore.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class Provider
+    public partial class Provider : IAggregateRoot
     {
         public Provider()
         {

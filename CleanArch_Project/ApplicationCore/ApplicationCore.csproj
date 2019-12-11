@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Mapping\ProviderExtensionMethods.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Entities\Product.cs~RF1a5f1c2.TMP" />
   </ItemGroup>
 
